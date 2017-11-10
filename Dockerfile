@@ -6,7 +6,7 @@ ENV project_base_url /root/project
 
 WORKDIR $project_base_url/backend
 
-RUN yum install -y jdk
+RUN yum install -y java
 
 COPY ./target/project.jar $project_base_url/backend/
 
